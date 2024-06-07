@@ -215,13 +215,22 @@ footer p {
   #sobre-nos .container {
     max-width: 80%;
   }
-  .viagens {
+  #sobre-nos .container h1 {
+    font-size: 2em;
+  }
+  #sobre-nos .container p {
+    font-size: 1em;
+  }
+  #viagens {
     padding: 16px 0;
   }
-  .viagens .catalogo {
+  #viagens .container {
+    width: 80%;
+  }
+  #viagens .catalogo {
     display: block;
   }
-  .viagens button {
+  #viagens button {
     margin-bottom: 20px;
   }
   #fale-conosco .container {

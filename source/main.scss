@@ -213,11 +213,23 @@ footer {
     #sobre-nos {
         .container {
             max-width: 80%;
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
         }
     }
     
-    .viagens {
+    #viagens {
         padding: 16px 0;
+
+        .container {
+            width: 80%;
+        }
+
         .catalogo {
             display: block;
         }
