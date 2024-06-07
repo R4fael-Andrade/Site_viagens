@@ -1,0 +1,39 @@
+@use '../source/variaveis.scss';
+
+header {
+    padding: 16px;
+    background-color: variaveis.$corPrincipal;
+    
+    
+
+    h1 {
+        color: #fff;
+        font-family: variaveis.$fontePrincipal;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .container  {
+        max-width: 1224px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+
+        li {
+            margin-left: 24px;
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}

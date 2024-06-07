@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  padding: 16px;
+  background-color: #009900;
+}
+header h1 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+header .container {
+  max-width: 1224px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+header ul li {
+  margin-left: 24px;
+  font-size: 20px;
+}
+header ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1224px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#sobre-nos {
+  background-image: url("https://cdn.pixabay.com/photo/2017/03/15/08/47/vietnam-2145504_1280.jpg");
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+}
+#sobre-nos .container {
+  max-width: 840px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+  text-align: end;
+  align-items: end;
+}
+#sobre-nos .container h1 {
+  font-size: 3.125em;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+#sobre-nos .container p {
+  font-size: 1.125em;
+  color: #fff;
+}
+#sobre-nos .container a {
+  margin-top: 10px;
+  max-width: 78px 32px;
+  padding: 16px;
+  background-color: #009900;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.viagens {
+  padding: 56px;
+}
+.viagens h1 {
+  text-align: center;
+  padding: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #009900;
+  font-weight: bold;
+  font-size: 32px;
+}
+.viagens .catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  width: 100%;
+  column-gap: 1%;
+  row-gap: 4%;
+  list-style: none;
+}
+.viagens .catalogo h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.viagens .catalogo img {
+  width: 100%;
+  height: 25vh;
+}
+.viagens .catalogo button {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #009900;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+.viagens .catalogo button:hover {
+  background-color: #006600;
+}
+.viagens .catalogo p {
+  display: inline-block;
+  text-decoration: line-through;
+  color: #cc0000;
+  font-size: 14px;
+}
+.viagens .catalogo span {
+  color: #009900;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+#fale-conosco h2 {
+  text-align: center;
+  padding: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #009900;
+}
+#fale-conosco .container {
+  display: flex;
+  justify-content: space-around;
+}
+#fale-conosco .social-links {
+  padding: 56px;
+}
+#fale-conosco .social-links h3 {
+  text-align: center;
+}
+#fale-conosco ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+#fale-conosco ul li {
+  padding: 12px;
+  font-size: 19px;
+}
+#fale-conosco ul li img {
+  height: 32px;
+}
+#fale-conosco ul li a {
+  color: #009900;
+}
+
+.form-container {
+  width: 480px;
+  padding: 56px 0;
+}
+.form-container label {
+  display: block;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+.form-container input, .form-container textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 32px;
+  border: 1px solid #009900;
+}
+.form-container textarea {
+  resize: none;
+  height: 90px;
+}
+.form-container button {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #009900;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+.form-container button:hover {
+  background-color: #006600;
+}
+
+footer {
+  padding: 16px;
+  background-color: #009900;
+  color: #fff;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #sobre-nos .container {
+    max-width: 80%;
+  }
+  .viagens {
+    padding: 16px 0;
+  }
+  .viagens .catalogo {
+    display: block;
+  }
+  .viagens button {
+    margin-bottom: 20px;
+  }
+  #fale-conosco .container {
+    display: block;
+    max-width: 80%;
+  }
+  #fale-conosco .container .form-container {
+    width: 100%;
+    padding: 16px;
+  }
+  #fale-conosco .container .social-links {
+    padding: 16px 0;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .viagens .catalogo {
+    grid-template-columns: repeat(2, 48%);
+    margin-bottom: 50px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
